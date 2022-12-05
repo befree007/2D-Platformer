@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Transform _targetPoint;    
+    private Transform _targetPoint;
+    private SpriteRenderer _spriteRenderer;
     private int _currentPoint;
     [SerializeField] private List<Transform> _points;
     [SerializeField] private float _moveSpeed;
+
+    private void Start()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void Update()
     {
@@ -32,11 +38,11 @@ public class Enemy : MonoBehaviour
 
         if (transform.position.x > _targetPoint.position.x)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            _spriteRenderer.flipX = false;
         }
         else if (transform.position.x < _targetPoint.position.x)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            _spriteRenderer.flipX = true;
         }
     }
 }

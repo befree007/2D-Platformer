@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5330888669666281352, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -378,6 +382,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5409708908408437301, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
   m_PrefabInstance: {fileID: 2052131493}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &827769926 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7053104530754928671, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+  m_PrefabInstance: {fileID: 2052131493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &827769930
 Animator:
   serializedVersion: 3
@@ -444,6 +453,10 @@ PrefabInstance:
     - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_Name
       value: Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5330888669666281352, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_RootOrder
@@ -522,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6418206135559354506, guid: 5a40d8f1d6e853849b00eb16aad64cf5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6418206135559354510, guid: 5a40d8f1d6e853849b00eb16aad64cf5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -580,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5330888669666281352, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -637,6 +658,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5360960545409038077, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: _jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5360960545409038077, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: _rigidbody2D
+      value: 
+      objectReference: {fileID: 827769926}
     - target: {fileID: 1246416560191849210, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -689,6 +718,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5409708908408437301, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799090661944508492, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053104530754928671, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053104530754928671, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d6f216d078d0ca498fcbebddf5c0403, type: 3}
 --- !u!4 &2081806849 stripped
@@ -706,6 +751,10 @@ PrefabInstance:
     - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_Name
       value: Platform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115090132384369475, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5330888669666281352, guid: 9a673e8ee4a8a5d41a8398bc970c0e1a, type: 3}
       propertyPath: m_RootOrder
