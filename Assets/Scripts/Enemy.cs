@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class Enemy : MonoBehaviour
 {
-    private Transform _targetPoint;
-    private SpriteRenderer _spriteRenderer;
-    private int _currentPoint;
     [SerializeField] private List<Transform> _points;
     [SerializeField] private float _moveSpeed;
+
+    private Transform _targetPoint;
+    private SpriteRenderer _spriteRenderer;
+    private int _currentPoint;    
 
     private void Start()
     {

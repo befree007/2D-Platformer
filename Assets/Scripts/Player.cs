@@ -15,7 +15,8 @@ public class Player : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
     private bool _onGround;
-    private const string animationRun = "Run";
+
+    private const string AnimationRun = "Run";
 
     private void Start()
     {
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
     private void Move()
     {
         _rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * _moveSpeed, _rigidbody2D.velocity.y);
-        _animator.SetFloat(animationRun, Mathf.Abs(Input.GetAxis("Horizontal")));
+        _animator.SetFloat(AnimationRun, Mathf.Abs(Input.GetAxis("Horizontal")));
 
         if (_rigidbody2D.velocity.x > transform.position.x)
         {
