@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Ground")
+        if (collision.collider.GetComponent<Ground>())
         {
             _onGround = true;
         }
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Ground")
+        if (collision.collider.GetComponent<Ground>())
         {
             _onGround = false;
         }
