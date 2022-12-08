@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawningCoins : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private float _delay;
     [SerializeField] private Coin _coin;
     [SerializeField] private float _rndXMinPosition;
     [SerializeField] private float _rndXMaxPosition;
 
+    private WaitForSeconds _waitForSeconds;
     private Coin _spawnedCoin;
 
     private void Start()
     {
+        _waitForSeconds = new WaitForSeconds(_delay);
         StartCoroutine(SpawnObject());
     }
 
@@ -22,7 +24,7 @@ public class SpawningCoins : MonoBehaviour
         {
             _spawnedCoin = Instantiate(_coin, new Vector2(Random.Range(_rndXMinPosition, _rndXMaxPosition), transform.position.y), Quaternion.identity);
 
-            yield return new WaitForSeconds(_delay);
+            yield return _waitForSeconds;
         }
     }
 }
